@@ -11,7 +11,10 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+dependencies {
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+}
 allprojects {
     repositories {
         jcenter()
